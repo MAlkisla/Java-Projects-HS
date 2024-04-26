@@ -1,0 +1,116 @@
+#chat-section {
+    display: none;
+}
+
+#username-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+}
+
+.username-form {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.bottom-msg {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+}
+
+#messages {
+    height: calc(100vh - 50px);
+    width: 70%;
+    float: right;
+    overflow-y: scroll;
+}
+
+#users {
+    float: left;
+    width: 30%;
+    height: 70%;
+    display: none;
+    overflow-y: auto;
+}
+
+.user-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 50px;
+    background-color: rgb(247,248,249);
+    border: 1px solid light-gray;
+    margin: 20px;
+    cursor: pointer;
+    opacity: 0.7;
+    &:hover {
+        scale: 1.05;
+        opacity: 1;
+        transition: 0.2s;
+    }
+}
+
+.message-top {
+    display: flex;
+    justify-content: space-between;
+}
+
+.sender {
+    color: blue;
+}
+
+.message {
+    margin-top: 5px;
+}
+
+.message-container {
+    height: 100px;
+    background-color: rgb(247,248,249);
+    margin: 5px;
+    border-radius: 20px;
+    opacity: 0.5;
+    padding: 5px;
+    &:hover {
+        opacity: 1;
+        transition: 0.5s;
+    }
+}
+
+#input-msg {
+    flex-grow: 9;
+}
+
+#send-msg-btn {
+    flex-grow: 1;
+}
+
+#public-chat-btn {
+    position: absolute;
+    bottom: 38px;
+    width: 30%;
+}
+
+#chat-with {
+    height: 10%;
+    width: 70%;
+    float: right;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.user {
+
+}
+
+.new-message-counter {
+
+}
